@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'userprofile',
     'dashboard',
     'school',
+    'alumni',
 ]
 
 MIDDLEWARE = [
