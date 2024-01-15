@@ -4,6 +4,15 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, logout, login
 
 # Create your views here.
+def home(request):
+    return render(request, 'core/home.html')
+
+def alumni(request):
+    return render(request, 'core/alumni.html')
+
+def about(request):
+    return render(request, 'core/about.html')
+
 def login_view(request):
     form = LoginForm(request.POST)
     if request.user.is_authenticated:
